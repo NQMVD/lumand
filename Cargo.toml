@@ -1,0 +1,17 @@
+[package]
+name = "lumand"
+description = "Rust bridge for lua and demand."
+version = "0.1.0"
+edition = "2021"
+authors = ["Noah <noahbuergler@proton.me"]
+license = "GPL-3.0-or-later"
+repository = "https://github.com/NQMVD/lumand"
+documentation = "https://docs.rs/lumand"
+keywords = ["cli"]
+
+[dependencies]
+demand = "1.6.1"
+mlua = { version = "0.10.2", features = ["lua52", "module"] }
+
+[lib]
+crate-type = ["cdylib"]
